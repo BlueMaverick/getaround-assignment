@@ -1,0 +1,1 @@
+kubectl --namespace monitoring port-forward prometheus-prometheus-operator-prometheus-0 9090
