@@ -51,11 +51,13 @@ Git repo :  https://github.com/BlueMaverick/getaround-assignment
 `kubectl get all -n monitoring` Make sure that all resources and up and running.
 
 **View Grafana Dashboard:** Execute `./grafana_dashboard_local.sh` 
-And grafana dashboard will be accessible at http://localhost:3000
+And grafana dashboard will be accessible at `_http://localhost:3000_`
+
+Username: admin , password: pa$$w0rd
 
 
 **View prometheus UI:** Execute `./prometheus_ui_local.sh`
-And prometheus UI will be accessible at http://localhost:9090
+And prometheus UI will be accessible at `_http://localhost:9090_`
 
 
 
