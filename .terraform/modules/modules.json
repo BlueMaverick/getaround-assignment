@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"release-prometheus-operator","Source":"OpenQAI/release-prometheus-operator/helm","Version":"0.0.6","Dir":".terraform/modules/release-prometheus-operator"}]}
