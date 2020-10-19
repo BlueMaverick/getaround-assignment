@@ -45,10 +45,20 @@ Git repo :  https://github.com/BlueMaverick/getaround-assignment
 
 
 
-**Result**: Installs Prometheus & Grafana clusters atop Kubernetes.
+**Result**:  Prometheus & Grafana are installed atop configured Kubernetes clusters.
 
+**Post deployment verifications:**
+`kubectl get all -n monitoring` Make sure that all resources and up and running.
 
-**View Grafana Dashboard:** Execute `./grafana_dashboard_local.sh`
+**View Grafana Dashboard:** Execute `./grafana_dashboard_local.sh` 
+And grafana dashboard will be accessible at http://localhost:3000
 
 
 **View prometheus UI:** Execute `./prometheus_ui_local.sh`
+And prometheus UI will be accessible at http://localhost:9090
+
+
+
+**Clean-up:**
+1. kill port forwarding processes if running in background. kill -9 <PID>
+2. `terraform destroy` and `kubectl delete ns monitoring` to cleanup k8s cluster.
